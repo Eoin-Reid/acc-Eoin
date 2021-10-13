@@ -41,7 +41,7 @@ else:
 units = int(input('Enter the amount of units of electricity you used: '))
 if  units <= 100:
     print('No charge for the amount of units used.')
-elif 100 < units >= 200:
+elif 100 < units <= 200:
     charge5Cents = units * 5
     print('Your amount charged is,', charge5Cents, 'cents')
 else:
