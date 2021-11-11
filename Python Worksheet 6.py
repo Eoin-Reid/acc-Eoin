@@ -9,9 +9,10 @@ sumO = evenN
 for evenN in range(10, 21, 2):
     print(evenN, '+', sumO, '=', evenN + sumO)
     sumO = evenN + sumO
+print('End of q2')
 
 #Question 3
-for num in range(10, 0, -2):
+for num in range(10, 0, -1):
     print(num)
 print('End of q3')
 
@@ -19,25 +20,23 @@ print('End of q3')
 for num1 in range(10):
     num1 = num1 * num1
     print(num1)
+    num1 = num1 * num1
+    print(num1)
 print('End of q4')
 
 #Question 5/6
 d = '*'
 user = int(input('Enter the amount of rows you want displayed, '))
-for num2 in range(user):
-    if num2 == 0:
-        print(d)
-    elif num2 == 1:
-        print(d*2)
-    elif num2 == 2:
-        print(d*3)
-    elif num2 == 3:
-        print(d*4)
-    else:
-        print(d*5)
-print('End of q5')
+for num1 in range(user):
+    for num2 in range(num1):
+        print('*', end = '')
+    print('')
 
 #Question 7
+variable = 1
 for num3 in range(5):
-    variable = int(input('Enter an integer, '))
+    variable2 = int(input('Enter an integer, '))
+    variable = variable * variable2
     print(variable)
+    
+    
