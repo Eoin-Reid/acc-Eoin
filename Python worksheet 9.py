@@ -66,26 +66,52 @@ list2 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 list2.copy() #returns a copy of the list
 print(list2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Question 3
+print('Question 3')
+ 
+while True:
+    list3 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    print('''1. Append an element
+    2. Insert an element
+    3. Append a list to the given list
+    4. Modify an existing element
+    5. Delete an existing element from its position
+    6. Delete an existing element with a given value
+    7. Sort the list in the ascending order
+    8. Sort the list in descending order
+    9. Display the list.''')
+    option = int(input('Please enter your choice (1-9): '))
+    
+    if option == 1:
+        us = input('Enter something you want to append, ')
+        lapp = list3.append(us)
+        print(list3)
+    
+    elif option == 2:
+        place = int(input('Enter where you want exchange it:'))
+        insrt = int(input('Enter what you want to insert: '))
+        inst = list3.insert(place, insrt)
+        print(list3)
+    
+    elif option == 3:
+        a = input('Enter a list to append: ')
+        list3.append(a)
+        print(list3)
+    
+    elif option == 4:
+        x = int(input('Enter what you want to modify:'))
+        insrt = int(input('Enter what you want to modify it to: '))
+        list3[x] = insrt
+        print(list3)
+        
+    elif option == 5:
+        c = int(input('Enter a charcter to delete: '))
+        del list3[c]
+        print(list3)
+        
+        
+        
+    
 
 
 
