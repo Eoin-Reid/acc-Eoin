@@ -83,50 +83,98 @@ while True:
     9. Display the list.''')
     option = int(input('Please enter your choice (1-9): '))
     
-    if option == 1:
+    while option == 1:
         us = input('Enter something you want to append, ')
+        list3 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
         lapp = list3.append(us)#Appendes us to end of list
         print(list3)
-    
-    elif option == 2:
+        ip = int(input('Enter 1 if you want to reapeat and 0 to return to main menu: '))
+        if ip == 1:
+            option = 1
+        elif ip == 0:
+            option = 0
+       
+    while option == 2:
         place = int(input('Enter where you want exchange it:'))
+        list3 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
         insrt = int(input('Enter what you want to insert: '))
         inst = list3.insert(place, insrt)#substitutes a character for another using its position
         print(list3)
+        ip = int(input('Enter 1 if you want to reapeat and 0 to return to main menu: '))
+        if ip == 1:
+            option = 2
+        elif ip == 0:
+            option = 0
     
-    elif option == 3:
+    while option == 3:
         a = input('Enter a list to append: ')
+        list3 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
         list3.append(a)#appends a list at the end
         print(list3)
-    
-    elif option == 4:
+        ip = int(input('Enter 1 if you want to reapeat and 0 to return to main menu: '))
+        if ip == 1:
+            option = 3
+        elif ip == 0:
+            option = 0
+       
+    while option == 4:
         x = int(input('Enter what you want to modify:'))
         insrt = int(input('Enter what you want to modify it to: '))
         list3[x] = insrt#substitutes a character for another using its value
         print(list3)
+        ip = int(input('Enter 1 if you want to reapeat and 0 to return to main menu: '))
+        if ip == 1:
+            option = 4
+        elif ip == 0:
+            option = 0
         
-    elif option == 5:
+    while option == 5:
         c = int(input('Enter a charcter to delete: '))
         del list3[c]#Deletes character from position c
         print(list3)
+        ip = int(input('Enter 1 if you want to reapeat and 0 to return to main menu: '))
+        if ip == 1:
+            option = 5
+        elif ip == 0:
+            option = 0
         
-    elif option == 6:
+    while option == 6:
         d = int(input('Enter an existing element with a given value to delete: '))
         list3.remove(d)#Delete all characters with value d
         print(list3)
+        ip = int(input('Enter 1 if you want to reapeat and 0 to return to main menu: '))
+        if ip == 1:
+            option = 6
+        elif ip == 0:
+            option = 0
     
-    elif option == 7:
+    while option == 7:
         list3.sort()
         print(list3)
+        ip = int(input('Enter 1 if you want to reapeat and 0 to return to main menu: '))
+        if ip == 1:
+            option = 7
+        elif ip == 0:
+            option = 0
     
-    elif option == 8:
+    while option == 8:
         list3.sort()
         list3.reverse()
         print(list3)
+        ip = int(input('Enter 1 if you want to reapeat and 0 to return to main menu: '))
+        if ip == 1:
+            option = 8
+        elif ip == 0:
+            option = 0
         
-    elif option == 9:
+    while option == 9:
         list3.copy
         print(list3)
+        ip = int(input('Enter 1 if you want to reapeat and 0 to return to main menu: '))
+        if ip == 1:
+            option = 9
+        elif ip == 0:
+            option = 0
         
 
         
