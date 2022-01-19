@@ -1,6 +1,6 @@
 def bubbleSort(L, boolean = input('Enter a boolean: ')):
     
-    
+
     file = open('BubbleSort1.txt', 'w')#Bubble Sort v3
     # 1. Initialise an unsorted
     #L= [5, 7, 3, 6, 2, 4, 1]
