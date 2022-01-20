@@ -1,7 +1,6 @@
 
-def bubbleSort(L):
+def bubbleSort(L, boolean):
     
-    boolean = input('Enter a boolean: ')
     file = open('BubbleSort1.py', 'w')#Bubble Sort v3
     # 1. Initialise an unsorted
     #L= [5, 7, 3, 6, 2, 4, 1]
@@ -40,4 +39,4 @@ def bubbleSort(L):
 
     file.close()
 q = [2,1,3]    
-bubbleSort(q)
+bubbleSort(q,False)
